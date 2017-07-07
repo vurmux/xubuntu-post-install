@@ -7,43 +7,47 @@ sudo apt-get -y --force-yes upgrade
 
 # Package installation
 sudo apt-get install -y --force-yes \
-	tmux \
+	chromium-browser \
 	cmake \
-	gcc \
-	g++ \
-	gitk \
 	emacs24 \
-	vim \
+	encfs \
+	fontconfig \
+	g++ \
+	gcc \
+	git \
+	gitk \
+	gnupg \
+	ipython3 \
+	kazam \
 	mtpaint \
-	sqlite3 \
 	openssh-client \
 	openssh-server \
+	openssl \
 	pep8 \
 	pylint \
 	python3 \
 	python3-crypto \
-	python3-requests \
 	python3-numpy \
-	python3-setuptools \
-	ipython3 \
-	python3-pip \
 	python3-pandas \
-	zsh \
-	gnupg \
-	fontconfig \
-	openssl \
-	unrar \
-	encfs \
-	tig \
-	git \
-	xfonts-terminus \
+	python3-pip \
+	python3-requests \
+	python3-setuptools \
 	scala \
-	kazam \
-	chromium-browser \
+	sqlite3 \
+	sublime-text-installer \
+	tig \
+	tmux \
+	unrar \
+	vim \
 	virtualbox \
 	virtualbox-guest-additions-iso \
 	vlc \
-	sublime-text-installer
+	xfce4-terminal \
+	xfonts-terminus \
+	zsh
+
+
+
 
 # If we are inside VirtualBox, add current user to VBox groups
 SYSTEMNAME=`sudo dmidecode -s system-product-name`
