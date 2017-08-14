@@ -9,6 +9,7 @@ sudo apt-get -y --force-yes upgrade
 sudo apt-get install -y --force-yes \
 	chromium-browser \
 	cmake \
+	curl \
 	emacs24 \
 	encfs \
 	fontconfig \
@@ -47,6 +48,10 @@ sudo apt-get install -y --force-yes \
 	zsh
 
 
+# Install NodeJS and Angular
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install -g @angular/cli
 
 
 # If we are inside VirtualBox, add current user to VBox groups
